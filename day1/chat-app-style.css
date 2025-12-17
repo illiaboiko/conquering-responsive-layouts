@@ -1,0 +1,49 @@
+* {
+   box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100vh;
+
+    border: 2px solid teal;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.chat-list {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.chat-list-item {
+    border: 1px solid black;
+    height: 5em;
+
+}
+
+.chat-window {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.chat-window-item {
+    border: 1px solid black;
+}
+
+.chat-window-header {
+    height: 5em;
+}
+
