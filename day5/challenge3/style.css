@@ -14,14 +14,18 @@
  *
  */
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+h1{
+  font-size: 3rem;
 }
 
 .container {
@@ -33,29 +37,27 @@ body {
 .background {
   background-color: #23424a;
   color: #ffffff;
+  padding: 100px 0;
 }
 
 .content {
   width: 75%;
-  padding: 2rem;
-}
-
-.content > * {
-  margin-block-end: 2rem;
 }
 
 .content p {
-  font-size: 21px;
   font-weight: 400;
   color: #ffffffd9;
 }
 
 .content button {
-  font-size: 21px;
   font-weight: 700;
   color: #23424A;
   background-color: #38cfd9;
   border: none;
   padding: 1em 2em;
   border-radius: 5em;
+}
+
+.content button:hover, .content button:focus {
+  opacity: .75;
 }
